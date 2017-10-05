@@ -3,7 +3,6 @@ var expect    = require("chai").expect;
 var calc = require('./calc.js');
 var server = require('./server.js');
 var http = require('http');
-var otp = require('./otp.js');
 var converter = require('./converter.js');
 
 //test color converter with mocha and chai
@@ -33,17 +32,7 @@ describe("Color Code Converter", function() {
          });
    });
 });
-for(var i = 0;i<1000;i++){
-//test otp for six digits
-describe("OPT test for 6 digits",function(){
-   it("should return otp of 6 digits",function(done){
-   	  var otp_to_test = String(otp.generateOTP());
-   	  assert.equal(otp_to_test.length,6);
-   	  done();
-   })
-  
-});
-}
+
 //server test goes here
 describe("Http Server Teset",function(){
       //starting server
