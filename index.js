@@ -9,6 +9,7 @@ describe("top", function () {
     });
     importTest('./otp_test');  
     importTest('./chai_test'); 
+     importTest('./server_test'); 
     after(function () {
       //  console.log("after all tests");
     });

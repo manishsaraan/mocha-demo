@@ -34,7 +34,7 @@ describe("Color Code Converter", function() {
 });
 
 //server test goes here
-describe("Http Server Teset",function(){
+describe("Http Server Test",function(){
       //starting server
 	  before(function() {
 			server.listen(8989);
